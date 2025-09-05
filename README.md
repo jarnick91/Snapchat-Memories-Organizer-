@@ -12,19 +12,6 @@ Runs completely **offline** on your computer with an easy-to-use **Python GUI**.
   -. the filename,
   -. or the file’s timestamp (fallback).
 - Copies media into structured folders:
-
----
-
-Output/
-├─ 2017/
-│ ├─ 2017-03/
-│ │ ├─ 2017-03-31_original.jpg
-│ │ └─ 2017-03-31_clip.mp4
-│ └─ 2017-04/
-└─ 2018/
-
-
-
 - GUI with:
   - Browse for `memories.html`
   - Browse for output folder
@@ -45,5 +32,18 @@ Output/
    git clone https://github.com/<your-username>/snapchat-memories-organizer-html.git
    cd snapchat-memories-organizer-html
 
+---
+### 🖱️ Usage
 
+Unzip your Snapchat export (make sure memories.html and all media files are in the same folder).
+
+Start the program.
+
+Select your memories.html.
+
+Select an output folder.
+
+Click Start.
+
+Files will be copied into YYYY/YYYY-MM/ folders.
 
