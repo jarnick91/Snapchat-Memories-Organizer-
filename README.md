@@ -1,7 +1,49 @@
-Snapchat Memories Organizer (HTML) is a lightweight Python program that helps you organize your Snapchat export when it contains a memories.html file with local media. Instead of dealing with thousands of unsorted files, the tool automatically arranges your photos and videos into a clean folder structure based on year and month.
+# 📸 Snapchat Memories Organizer (HTML)
 
-The script works by reading memories.html, which lists all your saved photos and videos. For each entry, it extracts the date — first from the HTML itself (for example from a <div class="text-line">), then from the filename if possible, or as a last resort from the file’s modification timestamp. The media files are then copied into folders like YYYY/YYYY-MM/, so for example all memories from March 2017 will be placed in 2017/2017-03/.
+Organize your **Snapchat Memories** export (when you have a `memories.html` file with local JPG/MP4 files) into a clean **year/month** folder structure.  
+Runs completely **offline** on your computer with an easy-to-use **Python GUI**.
 
-The program comes with a simple graphical interface built with Tkinter. You can browse for your memories.html file, choose an output folder, and then click Start. A progress bar, status messages, and a scrolling log show what the script is doing, and there is also a Cancel button if you want to stop the process early.
+---
 
-Everything runs completely offline — no files are uploaded, no accounts are needed, and no internet connection is required. All processing happens locally on your computer. The only requirement is Python 3.8 or newer with Tkinter installed (included by default on Windows and macOS; available via your package manager on Linux).
+## ✨ Features
+- Parses `memories.html` from a Snapchat export.
+- Extracts dates from:
+  -. the HTML (`<div class="text-line">YYYY-MM-DD`),
+  -. the filename,
+  -. or the file’s timestamp (fallback).
+- Copies media into structured folders:
+
+---
+
+Output/
+├─ 2017/
+│ ├─ 2017-03/
+│ │ ├─ 2017-03-31_original.jpg
+│ │ └─ 2017-03-31_clip.mp4
+│ └─ 2017-04/
+└─ 2018/
+
+
+
+- GUI with:
+  - Browse for `memories.html`
+  - Browse for output folder
+  - Start / Cancel buttons
+  - Progress bar + log window
+
+---
+
+## 🚀 Getting Started
+
+### Requirements
+- Python **3.8+**
+- Tkinter (included on Windows/macOS; on Linux: `sudo apt install python3-tk`)
+
+### Installation
+1. Download or clone this repo:
+   ```bash
+   git clone https://github.com/<your-username>/snapchat-memories-organizer-html.git
+   cd snapchat-memories-organizer-html
+
+
+
